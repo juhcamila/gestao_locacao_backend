@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 module.exports = function(app) {
-    let MarcasCarrosModel = app.db.mongoose.model("ModelosCarros")
+    let MarcasCarrosModel = app.db.mongoose.model("MarcasCarros")
 
     return {
         listarMarcas: function(req, res) {
