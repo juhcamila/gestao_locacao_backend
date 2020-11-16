@@ -12,6 +12,10 @@ module.exports = app => {
         senha: {
             type: String,
             required: [true, 'é obrigatório']
+        }, 
+        tipo: {
+            type: BigInt,
+            required: [true, 'é obrigatório']
         }
     })
     app.db.mongoose.model("Usuarios", UsuariosSchema)
